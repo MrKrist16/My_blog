@@ -25,8 +25,8 @@
         <div class="about-me-div-text">
           <p class="about-me-text white-text">Hi, i am Sergii Kirnosov. I'm 15 age. I'm beginer full-stack web-developer. So this website was created to demonstrate my skils. I self learning, but you can not doubt in my knowledge. I want improve my skils and work in Upwork. You can see my projects in GitHub and can write to me in email. <a class="about-me-link" href="https://github.com/sergii-python-developer">My GitHub</a> and my email <b style="color: #30c452; font-weight: bold;">kirnosov200@gmail.com </b> also my <a class="about-me-link" href="https://www.instagram.com/sergii_kirnosov/">Instagram</a>. You can write me at any time for you. You can learn more about me in <a class="about-me-link" href="https://www.upwork.com/freelancers/~018f4ed4cb5048c092">Upwork</a>.</p>
         </div>
-        <div class="about-me-photo">
-          <img src="{{ asset('storage/images/about-me-photo.jpg') }}" height="400">
+        <div class="about-me-div-photo">
+          <img class="about-me-photo" src="{{ asset('storage/images/about-me-photo.jpg') }}" height="400">
         </div>
       </div>
     </div>

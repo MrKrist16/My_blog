@@ -21,10 +21,42 @@
     @include('layouts.navbar')
 
     <div class="intro-self-development">
-      <div class="mask rgba-black-strong" style="height: 100%;">
-        <div class="container-fluid d-flex align-items-center justify-content-center h-100">
-          <div class="row d-flex justify-content-center text-center">
-              
+      <div class="mask rgba-black-strong" style="height: auto; min-height: 100vh;">
+        <div class="div-self-development">
+          <div class="blur">
+            <a href="">
+              <img src="{{ asset('storage/uploads/1.jpg') }}">
+            </a>
+          </div>
+          <div class="blur">
+            <a href="">
+              <img src="{{ asset('storage/uploads/2.jpg') }}">
+            </a>
+          </div>
+          <div class="blur">
+            <a href="">
+              <img src="{{ asset('storage/uploads/3.jpg') }}">
+            </a>
+          </div>
+          <div class="blur">
+            <a href="">
+              <img src="{{ asset('storage/uploads/4.jpg') }}">
+            </a>
+          </div>
+          <div class="blur">
+            <a href="">
+              <img src="{{ asset('storage/uploads/5.jpg') }}">
+            </a>
+          </div>
+          <div class="blur">
+            <a href="">
+              <img src="{{ asset('storage/uploads/6.jpg') }}">
+            </a>
+          </div>
+          <div class="blur">
+            <a href="">
+              <img src="{{ asset('storage/uploads/7.jpg') }}">
+            </a>
           </div>
         </div>
       </div>
