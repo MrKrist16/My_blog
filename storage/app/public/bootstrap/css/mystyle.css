@@ -1,0 +1,224 @@
+html,body,header {
+	height: 100%;
+}
+
+.main-homepage {
+	height: 100%;
+}
+
+.main-about-me {
+	height: 100%;
+}
+
+.main-programming {
+	height: 240%;
+}
+
+.main-self-development {
+	height: auto;
+	min-height: 100vh;
+}
+
+.main-music {
+	height: 200%;
+}
+
+.intro-homepage{
+	height: 100vh;
+	background: url('../../images/home.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.intro-self-development{
+	height: auto;
+	min-height: 100vh;
+}
+
+.intro-about-me{
+	height: 100vh;
+	background: url('../../images/about-me.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.intro-programming{
+	height: 240vh;
+	background: url('../../images/programming.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.intro-music{
+	height: 250vh;
+	background: url('../../images/music.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.about-me-div-text{
+	position: absolute;
+	height: 100%;
+	width: 50%;
+	left: 3%;
+	padding-top: 200px;
+	word-wrap: break-word;
+}
+
+.about-me-text{
+	font-size: 15pt;
+}
+
+A.about-me-link{
+	font-size: 15pt;
+	color: #30c452;
+}
+
+A:hover.about-me-link{
+	font-size: 15pt;
+	font-weight: bold;
+	color: #30c452;
+}
+
+A:visited.about-me-link{
+	font-size: 15pt;
+	color: #30c452;
+}
+
+.about-me-div-photo{
+	position: absolute;
+	right: 10%;
+	padding-top: 200px;
+	
+}
+
+.about-me-photo{
+	border: 2px solid white;
+}
+
+.container-self-development{
+	margin: 0 auto;
+	padding: 20px;
+	padding-top: 75px;
+}
+
+.columns-self-development{
+	-webkit-column-count: 5;
+	-moz-column-count: 5;
+	column-count: 5;
+	-webkit-column-width: 20%;
+	-moz-column-width: 20%;
+	column-width: 20%;
+}
+
+@media only screen and (min-width: 949px) and (max-width: 950px) {
+  .columns-self-development {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    -webkit-column-width: 25%;
+    -moz-column-width: 25%;
+    column-width: 25%;
+  }
+}
+
+@media only screen and (min-width: 728px) and (max-width: 948px) {
+  .columns-self-development {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33.3333333333%;
+    -moz-column-width: 33.3333333333%;
+    column-width: 33.3333333333%;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 727px) {
+  .columns-self-development {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-width: 50%;
+    -moz-column-width: 50%;
+    column-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .columns-self-development {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+}
+
+.hvrbox,
+.hvrbox * {
+	box-sizing: border-box;
+}
+.hvrbox {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+	width: 400px;
+}
+
+.hvrbox img {
+	max-width: 100%;
+}
+
+.hvrbox .hvrbox-layer_bottom {
+	display: block;
+}
+.hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top .container-self-development img{
+	opacity: 1;
+}
+.hvrbox .hvrbox-text {
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.hvrbox .hvrbox-text_mobile {
+	font-size: 15px;
+	font-weight: bold;
+	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.hvrbox.active .hvrbox-text_mobile {
+	display: block;
+}
+

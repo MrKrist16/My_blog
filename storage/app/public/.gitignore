@@ -1,2 +1,14 @@
-*
+/bootstrap/font
+/bootstrap/img
+/bootstrap/js
+/bootstrap/scss
+/bootstrap/css/addons
+/bootstrap/css/modules
+/bootstrap/css/bootstrap.css
+/bootstrap/css/bootstrap.min.css
+/bootstrap/css/mdb.css
+/bootstrap/css/mdb.lite.min.css
+/bootstrap/css/mdb.min.css
+/bootstrap/css/mdb.lite.css
+
 !.gitignore
