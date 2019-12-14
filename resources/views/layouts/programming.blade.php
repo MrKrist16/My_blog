@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Programming</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <!-- MDB icon ( Ed-->
   <link rel="icon" href="{{ asset('storage/images/favicon.ico') }}" type="image/x-icon">
   <!-- Font Awesome -->
@@ -22,9 +23,62 @@
     
     <div class="intro-programming">
       <div class="mask rgba-black-strong" style="height: 100%;">
-        <div class="container-fluid d-flex align-items-center justify-content-center h-100">
-          <div class="row d-flex justify-content-center text-center">
-
+        <div class="article-container article-columns">
+          <div class="article">
+            <img src="{{ asset('storage/uploads/1.jpg') }}">
+            <div class="text">
+              <h3>Title</h3>
+              <p>Description for article</p>
+              <a href="#"><button class="btn purple-gradient">Read More...</button></a>
+            </div>
+          </div>
+          <div class="article">
+            <img src="{{ asset('storage/uploads/2.jpg') }}">
+            <div class="text">
+              <h3>Title</h3>
+              <p>Description for article</p>
+              <a href="#"><button class="btn purple-gradient">Read More...</button></a>
+            </div>
+          </div>
+          <div class="article">
+            <img src="{{ asset('storage/uploads/3.jpg') }}">
+            <div class="text">
+              <h3>Title</h3>
+              <p>Description for article</p>
+              <a href="#"><button class="btn purple-gradient">Read More...</button></a>
+            </div>
+          </div>
+          <div class="article">
+            <img src="{{ asset('storage/uploads/4.jpg') }}">
+            <div class="text">
+              <h3>Title</h3>
+              <p>Description for article</p>
+              <a href="#"><button class="btn purple-gradient">Read More...</button></a>
+            </div>
+          </div>
+          <div class="article">
+            <img src="{{ asset('storage/uploads/5.jpg') }}">
+            <div class="text">
+              <h3>Title</h3>
+              <p>Description for article</p>
+              <a href="#"><button class="btn purple-gradient">Read More...</button></a>
+            </div>
+          </div>
+          <div class="article">
+            <img src="{{ asset('storage/uploads/6.jpg') }}">
+            <div class="text">
+              <h3>Title</h3>
+              <p>Description for article</p>
+              <a href="#"><button class="btn purple-gradient">Read More...</button></a>
+            </div>
+          </div>
+          <div class="article">
+            <img src="{{ asset('storage/uploads/7.jpg') }}">
+            <div class="text">
+              <h3>Title</h3>
+              <p>Description for article</p>
+              <a href="#"><button class="btn purple-gradient">Read More...</button></a>
+            </div>
           </div>
         </div>
       </div>
@@ -41,8 +95,10 @@
   <script type="text/javascript" src="{{ asset('storage/bootstrap/js/bootstrap.min.js') }}"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="{{ asset('storage/bootstrap/js/mdb.min.js') }}"></script>
-  <!-- Your custom scripts (optional) -->
-  <script type="text/javascript"></script>
+  <!-- My custom scripts -->
+  <script type="text/javascript" src="{{ asset('storage/bootstrap/js/myScript.js') }}"></script>
+  <!-- Masonry script -->
+  <script type="text/javascript" src="{{ asset('storage/bootstrap/js/masonry.pkdg.min.js') }}"></script>
 
 </body>
 </html>

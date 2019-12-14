@@ -1,6 +1,15 @@
 /bootstrap/font
 /bootstrap/img
-/bootstrap/js
+/bootstrap/js/addons
+/bootstrap/js/modules
+/bootstrap/js/bootstrap.js
+/bootstrap/js/bootstrap.min.js
+/bootstrap/js/jquery.js
+/bootstrap/js/jquery.min.js
+/bootstrap/js/mdb.js
+/bootstrap/js/mdb.min.js
+/bootstrap/js/popper.js
+/bootstrap/js/popper.min.js
 /bootstrap/scss
 /bootstrap/css/addons
 /bootstrap/css/modules

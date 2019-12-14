@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Self development</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <!-- MDB icon ( Ed-->
   <link rel="icon" href="{{ asset('storage/images/favicon.ico') }}" type="image/x-icon">
   <!-- Font Awesome -->

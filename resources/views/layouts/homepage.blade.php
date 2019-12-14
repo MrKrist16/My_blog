@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Tech Blog</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <!-- MDB icon ( Ed-->
   <link rel="icon" href="{{ asset('storage/images/favicon.ico') }}" type="image/x-icon">
   <!-- Font Awesome -->
@@ -25,11 +26,11 @@
         <div class="container-fluid d-flex align-items-center justify-content-center h-100">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-md-10">
-              <h2 class="display-4 font-weight-bold white-text pt-5 mb-2">
+              <h2 class="display-4 font-weight-bold white-text pt-5 mb-2" style="font-family: 'Open Sans', sans-serif;">
                 My first site for Upwork
               </h2>
               <hr class="hr-light">
-              <h4 class="white-text my-4">This web-site created Sergii Kirnosov for Upwork.</h4>
+              <h4 class="white-text my-4" style="font-family: 'Open Sans', sans-serif;">This web-site created Sergii Kirnosov for Upwork.</h4>
             </div>  
           </div>
         </div>

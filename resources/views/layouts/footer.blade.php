@@ -14,8 +14,8 @@
     </div>
   </div>
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2019 Copyright:
-    <a href="https://www.upwork.com/o/profiles/users/_~018f4ed4cb5048c092/"> Sergii Kirnosov</a>
+  <div class="footer-copyright text-center py-3" style="font-family: 'Open Sans', sans-serif;">© 2019 Copyright:
+    <a href="https://www.upwork.com/o/profiles/users/_~018f4ed4cb5048c092/" style="font-family: 'Open Sans', sans-serif;"> Sergii Kirnosov</a>
   </div>
   <!-- Copyright -->
 
