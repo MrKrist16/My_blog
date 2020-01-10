@@ -30,7 +30,7 @@
                 My first site for Upwork
               </h2>
               <hr class="hr-light">
-              <h4 class="white-text my-4" style="font-family: 'Open Sans', sans-serif;">This web-site created Sergii Kirnosov for Upwork.</h4>
+              <h4 class="white-text my-4" style="font-family: 'Open Sans', sans-serif;">This website created Sergii Kirnosov for Upwork.</h4>
             </div>  
           </div>
         </div>

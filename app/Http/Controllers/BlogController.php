@@ -21,11 +21,6 @@ class BlogController extends Controller
     	return view('layouts.programming');
     }
 
-    public function music()
-    {
-    	return view('layouts.music');
-    }
-
     public function self_development()
     {
     	return view('layouts.self_development');

@@ -77,7 +77,7 @@
             <div class="text">
               <h3>Title</h3>
               <p>Description for article</p>
-              <a href="#"><button class="btn purple-gradient">Read More...</button></a>
+              <a href="#"><button class="btn purple-gradient"sty>Read More...</button></a>
             </div>
           </div>
         </div>

@@ -33,6 +33,9 @@ html,body,header {
 .intro-self-development{
 	height: auto;
 	min-height: 100vh;
+	background: url('../../images/self-development.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 
 .intro-about-me{
@@ -127,28 +130,10 @@ A:visited.about-me-link{
     -moz-column-width: 33.3333333333%;
     column-width: 33.3333333333%;
   }
-
-  .article-columns {
-	-webkit-column-count: 3;
-	-moz-column-count: 3;
-	column-count: 3;
-	-webkit-column-width: 33.3333333333%;
-	-moz-column-width: 33.3333333333%;
-	column-width: 33.3333333333%;
-  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 727px) {
   .columns-self-development {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-    -webkit-column-width: 50%;
-    -moz-column-width: 50%;
-    column-width: 50%;
-  }
-
-  .article-columns {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
@@ -168,14 +153,6 @@ A:visited.about-me-link{
     column-width: 100%;
   }
 
-  .article-columns {
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
-    -webkit-column-width: 100%;
-    -moz-column-width: 100%;
-    column-width: 100%;
-  }
 }
 
 .hvrbox,
@@ -189,6 +166,7 @@ A:visited.about-me-link{
 	max-width: 100%;
 	height: auto;
 	width: 400px;
+	margin-bottom: 10px;
 }
 
 .hvrbox img {
@@ -269,7 +247,6 @@ A:visited.about-me-link{
 
 .article {
 	background-color: white;
-	display: run-in;
 	margin-bottom: 15px;
 }
 
@@ -285,3 +262,191 @@ A:visited.about-me-link{
 	font-family: 'Open Sans', sans-serif;
 }
 
+
+@media only screen and (min-width: 728px) and (max-width: 948px) {
+  .article-columns {
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3;
+	-webkit-column-width: 33.3333333333%;
+	-moz-column-width: 33.3333333333%;
+	column-width: 33.3333333333%;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 727px) {
+  .article-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-width: 50%;
+    -moz-column-width: 50%;
+    column-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .article-columns {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+
+}
+
+.musicPlayer{
+	position: relative;
+	min-width: 30%;
+	max-width: 50%;
+	width: auto;
+	left: 14.9%;
+	height: 100px;
+	display: flex !important;
+	flex-direction: column !important;
+	justify-content: center !important;
+	align-items: center !important; 
+}
+
+.musicPlayer #songTitle{
+	display: flex;
+	flex-direction: row !important;
+	justify-content: center !important;
+	align-items: center !important;
+	color: white;
+	padding-top: 10px;
+	margin-bottom: -10px;
+	font-family: 'Open Sans', sans-serif;
+	max-width: 100%;
+}
+
+.musicPlayer .buttons{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.musicPlayer .buttons * {
+	outline: 0 !important;
+}
+
+.musicPlayer .buttons #pre {
+	border-radius: 50%;
+	height: 30px;
+	width:30px;
+	border: none;
+	background: url('../../images/pre.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+
+#play{
+	border-radius: 50%;
+	height: 40px;
+	width:40px;
+	border: none;
+	background: url('../../images/play.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#pause{
+	border-radius: 50%;
+	height: 40px;
+	width:40px;
+	border: none;
+	background: url('../../images/pause.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.musicPlayer .buttons #next{
+	border-radius: 50%;
+	height: 30px;
+	width:30px;
+	border: none;
+	background: url('../../images/next.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.musicPlayer .buttons #mix{
+	border-radius: 50%;
+	height: 40px;
+	width:40px;
+	border: none;
+	background: url('../../images/mix.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.musicPlayer .buttons #replay{
+	border-radius: 50%;
+	height: 40px;
+	width:40px;
+	border: none;
+	background: url('../../images/replay.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#seek-bar{
+	width: 250px;
+	height: 5px;
+	background-color: gray;
+	display: flex;
+	border-radius: 50px;
+	cursor: pointer;
+	margin-bottom: 15px;
+}
+
+#fill{
+	height: 5px;
+	background-color: white;
+	border-radius: 20px;
+}
+
+#handle{
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	margin-left: -5px;
+	transform: scale(2.3);
+}
+
+#basicExampleNav .musicPlayer{
+	position: relative;
+	left: -47px;
+}
+
+@media only screen and (max-width: 767px) {
+	#basicExampleNav .musicPlayer{
+		position: relative;
+		left: -1px;
+
+	}
+}

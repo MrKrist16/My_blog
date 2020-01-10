@@ -14,5 +14,4 @@
 Route::get('/', 'BlogController@mainpage');
 Route::get('/about_me', 'BlogController@about_me');
 Route::get('/programming', 'BlogController@programming');
-Route::get('/music', 'BlogController@music');
 Route::get('/self_development', 'BlogController@self_development');
