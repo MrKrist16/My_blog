@@ -191,8 +191,8 @@ song.addEventListener('timeupdate', function(){
 	if (song.duration === song.currentTime){
 		if(replayBool === true && mixBool === true){
 			song.play();
-		}else if(mixBool === true){
-
+		}else if(replayBool === true){
+			song.play();
 		}else if(replayBool === false && mixBool === false){
 			next();
 		}
