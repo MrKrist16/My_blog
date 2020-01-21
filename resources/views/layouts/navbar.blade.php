@@ -24,15 +24,19 @@
       <div class="musicPlayer navbar-nav mr-auto smooth-scroll">
         <div id="songTitle">Demo</div>
         <div class="buttons nav-link">
-          <button id="mix" class="waves-effect waves-light"></button>
+          <button id="mix" onclick="mix()" type="button" class="waves-effect waves-light"></button>
           <button id="pre" onclick="pre()" type="button" class="waves-effect waves-light"></button>
           <button id="play" onclick="playOrPauseSong()" type="button" class="waves-effect waves-light"></button>
           <button id="next" onclick="next()" type="button" class="waves-effect waves-light"></button>
-          <button id="replay" class="waves-effect waves-light"></button>
+          <button id="replay" onclick="replay()" type="button"class="waves-effect waves-light"></button>
         </div>
-        <div id="seek-bar">
-          <div id="fill"></div>
-          <div id="handle"></div>
+        <div class="bottom-buttons">
+          <div id="current-time">0:00</div>
+          <div id="seek-bar">
+            <div id="fill"></div>
+            <div id="handle"></div>
+          </div>
+          <div id="total-time">0:00</div>
         </div>
       </div>
     </div>

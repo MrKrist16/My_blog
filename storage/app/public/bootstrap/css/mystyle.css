@@ -2,6 +2,12 @@ html,body,header {
 	height: 100%;
 }
 
+:focus {
+    outline-style: none;
+    outline-width: 0px !important;
+    outline-color: none !important;
+}
+
 .main-homepage {
 	height: 100%;
 }
@@ -65,7 +71,7 @@ html,body,header {
 .about-me-div-text{
 	position: absolute;
 	height: 100%;
-	width: 50%;
+	width: 53%;
 	left: 3%;
 	padding-top: 200px;
 	word-wrap: break-word;
@@ -84,8 +90,7 @@ A.about-me-link{
 
 A:hover.about-me-link{
 	font-size: 15pt;
-	font-weight: bold;
-	color: #30c452;
+	color: white !important;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -449,4 +454,49 @@ A:visited.about-me-link{
 		left: -1px;
 
 	}
+}
+
+#current-time {
+	color: white;
+	margin-right: 19px;
+}
+
+#total-time {
+	color: white;
+	margin-left: 15px;
+}
+
+.bottom-buttons{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+}
+
+#replay-on{
+	border-radius: 50%;
+	height: 40px;
+	width:40px;
+	border: none;
+	background: url('../../images/replay_on.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#mix-on{
+	border-radius: 50%;
+	height: 40px;
+	width:40px;
+	border: none;
+	background: url('../../images/mix_on.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
