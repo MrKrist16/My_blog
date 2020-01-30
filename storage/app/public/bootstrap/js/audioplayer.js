@@ -24,7 +24,12 @@ $.ajax({
 		songTitle.textContent = removeMp3(musicList[currentSong]);
 		song.src = "/storage/music/" + musicList[currentSong];
 
-		setTimeout(returnTimeTotalTime, 200);
+		if (Number.isNaN(song.duration) === true){
+			setTimeout(returnTimeTotalTime, 500);
+		}else{
+			let timeTotalTime = calculateTotalValue(song.duration);
+			jQuery("#total-time").html(timeTotalTime);
+		}
 	}
 })
 
@@ -135,17 +140,18 @@ function mix() {
 }
 
 function calculateTotalValue(length) {
-    let minutes = Math.floor(length / 60);
-      let  seconds_int = length - minutes * 60;
-  if(seconds_int < 10){
-    //console.info("here");
-    seconds_int = "0"+seconds_int;
-    //console.info(seconds_int);
-  }
-      let seconds_str = seconds_int.toString();
-       let  seconds = seconds_str.substr(0, 2);
-        let time = minutes + ':' + seconds;
-//console.info(seconds_int)
+  	let minutes = Math.floor(length / 60);
+  	let  seconds_int = length - minutes * 60;
+	if(seconds_int < 10){
+		//console.info("here");
+		seconds_int = "0"+seconds_int;
+		//console.info(seconds_int);
+	}
+
+    let seconds_str = seconds_int.toString();
+    let  seconds = seconds_str.substr(0, 2);
+    let time = minutes + ':' + seconds;
+	//console.info(seconds_int)
     return time;
 }
 
@@ -181,7 +187,7 @@ song.addEventListener('timeupdate', function(){
 	timeCurrentTime = calculateCurrentValue(song.currentTime);
 	jQuery("#current-time").html(timeCurrentTime);
 
-	if (calculateTotalValue(song.duration) === "NaN:Na"){
+	if (Number.isNaN(song.duration) === true){
 		setTimeout(returnTimeTotalTime, 100);
 	}else{
 		let timeTotalTime = calculateTotalValue(song.duration);
