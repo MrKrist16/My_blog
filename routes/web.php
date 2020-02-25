@@ -16,9 +16,11 @@ Route::get('/about_me', 'BlogController@about_me');
 Route::get('/programming', 'BlogController@programming');
 Route::get('/self_development', 'BlogController@self_development');
 
-Auth::routes();
+Route::get('/register', 'AuthenticationController@returnViewRegistration');
+Route::post('/register', 'AuthenticationController@storeAccount');
 
-Route::get('dashboard', 'Admin\AdminController@get_dashboard');
-Auth::routes();
+Route::get('/login', 'AuthenticationController@returnViewLogin');
+Route::post('/login', 'AuthenticationController@logIn');
+Route::get('/logout', 'AuthenticationController@logOut');
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/admin/dashboard', 'AdminController@dashboard');

@@ -1,6 +1,4 @@
 
-<script type="text/javascript" src="{{ asset('storage/bootstrap/js/jquery-3.4.1.min.js') }}"></script>
-
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
   <div class="container">
     <a href="/" class="navbar-brand" style="font-family: 'Open Sans', sans-serif;">Tech Blog</a>
@@ -43,4 +41,5 @@
   </div>
 </nav>
 
+<script type="text/javascript" src="{{ asset('storage/bootstrap/js/jquery-3.4.1.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('storage/bootstrap/js/audioplayer.js') }}"></script>
