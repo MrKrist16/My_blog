@@ -9,8 +9,6 @@
 
     @if(auth()->check())
         <h4>Hi {{ auth()->user()->name }}</h4>
-    @else
-        <p>You are not logged in</p>
     @endif
 </body>
 </html>

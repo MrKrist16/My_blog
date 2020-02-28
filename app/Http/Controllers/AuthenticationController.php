@@ -26,7 +26,7 @@ class AuthenticationController extends Controller
 
         auth()->login($user);
 
-        return redirect()->to('/admin/dashboard');
+        return redirect()->to('/');
     }
 
     // AUTHORIZATION
