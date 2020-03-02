@@ -1,4 +1,4 @@
-@extends('authentication.app(temporary)')
+@extends('admin.app')
  
 @section('content')
     <h2>Register</h2>
