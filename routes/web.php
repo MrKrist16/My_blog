@@ -26,5 +26,6 @@ Route::get('/logout', 'AuthenticationController@logOut');
 Route::group(['middleware' => 'auth'], function(){
     Route::group(['middleware' => 'admin'], function(){
         Route::get('/admin/dashboard', 'AdminController@dashboard');
+        Route::resource('/admin/images', 'ImagesController');
     });
 });

@@ -42,6 +42,10 @@ class AuthenticationController extends Controller
             return back()->withErrors([
                 'message' => 'The email or password is incorrect, please try again'
             ]);
+        }elseif(auth()->user()->name == 'Admin'){
+            return redirect()->to('/admin/dashboard');
+        }else{
+            return redirect()->to('/');
         }
     }
 

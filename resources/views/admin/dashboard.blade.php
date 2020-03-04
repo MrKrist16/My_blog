@@ -9,7 +9,7 @@
                     <a href="#" class="my_link btn btn-info">Articles</a>
                     <p class="my_text">{{$articles}}</p>
                 </div>
-                <a class="my_link btn btn-info" href="#">Create article</a>
+                <a class="my_link btn btn-info" href="articles/create">Create article</a>
             </div>
         </div>
 
@@ -19,7 +19,7 @@
                     <a href="#" class="my_link btn btn-info">Images</a>
                     <p class="my_text">{{$images}}</p>
                 </div>
-                <a class="my_link btn btn-info" href="#">Upload image</a>
+                <a class="my_link btn btn-info" href="images/create">Upload image</a>
             </div>
         </div>
         
@@ -29,7 +29,7 @@
                     <a href="#" class="my_link btn btn-info">Music</a>
                     <p class="my_text">{{$music}}</p>
                 </div>
-                <a class="my_link btn btn-info" href="#">Upload music</a>
+                <a class="my_link btn btn-info" href="music/create">Upload music</a>
             </div>
         </div>
         

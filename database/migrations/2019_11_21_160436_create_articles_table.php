@@ -19,7 +19,8 @@ class CreateArticlesTable extends Migration
           $table->text('description');
           $table->text('short_description');
           $table->string('image');
-          $table->integer('views')->nullable();;
+          $table->integer('views')->nullable();
+          $table->integer('likes')->nullable();
           $table->integer('created_by')->nullable();
           $table->timestamps();
         });
