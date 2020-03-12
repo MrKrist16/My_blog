@@ -19,5 +19,7 @@
 /bootstrap/css/mdb.lite.min.css
 /bootstrap/css/mdb.min.css
 /bootstrap/css/mdb.lite.css
+/music
+/uploads
 
 !.gitignore
