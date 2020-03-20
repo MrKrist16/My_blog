@@ -38,7 +38,7 @@ class ImagesController extends Controller
      */
     public function store(Request $request)
     {
-       $path = $request->file('image')->store('uploads', 'public');
+       $path = $request->file('image')->store('uploads/images', 'public');
 
        $image = new Images(['url' => $path]);
 
@@ -84,7 +84,7 @@ class ImagesController extends Controller
 
         Storage::disk('public')->delete($image->url);
 
-        $path = $request->file('image')->store('uploads', 'public');
+        $path = $request->file('image')->store('uploads/images', 'public');
 
         $image->url = $path;
         $image->save();

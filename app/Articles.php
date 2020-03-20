@@ -8,6 +8,6 @@ class Articles extends Model
 {
     protected $fillable = [
         'title', 'description', 'short_description',
-        'image', 'views', 'likes', 'created_by',
+        'image', 'views', 'likes', 'created_at', 'coments',
     ];
 }

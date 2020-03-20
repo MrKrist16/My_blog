@@ -27,6 +27,7 @@ Route::group(['middleware' => 'auth'], function(){
     Route::group(['middleware' => 'admin'], function(){
         Route::get('/admin/dashboard', 'AdminController@dashboard');
         Route::resource('/admin/images', 'ImagesController');
+        Route::resource('/admin/articles', 'ArticlesController');
         Route::get('/admin/music', 'MusicController@index');
         Route::delete('/admin/music/{music}', ['as' => 'music.destroy', 'uses' => 'MusicController@destroy']);
         Route::get('/admin/music/create', ['as' => 'music.store', 'uses' => 'MusicController@create']);

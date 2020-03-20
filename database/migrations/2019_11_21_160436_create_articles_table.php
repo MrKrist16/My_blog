@@ -21,7 +21,7 @@ class CreateArticlesTable extends Migration
           $table->string('image');
           $table->integer('views')->nullable();
           $table->integer('likes')->nullable();
-          $table->integer('created_by')->nullable();
+          $table->integer('coments')->nullable();
           $table->timestamps();
         });
     }

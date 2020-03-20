@@ -23,7 +23,8 @@
                 </div>
 
                 <div class="form-group">
-                    <input type="file" name="music">     
+                    <label for="name">Music</label>
+                    <input type="file" class="form-control-file" name="music" id="music" >
                 </div>
 
                 <button type="submit" class="btn btn-primary">Upload</button>

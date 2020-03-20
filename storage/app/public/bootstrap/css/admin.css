@@ -1,23 +1,53 @@
-.my_jumbotron{
+.my_jumbotron_dashboard{
     margin-top: 5%;
 }
 
-.my_link{
+.my_link_dashboard{
     margin-top: 20px;
     font-size: 30px;
     
 }
 
-.my_text{
+.my_text_dashboard{
     font-size: 30px;
     padding-left: 10px;
     margin-top: 28px;
 }
 
-.my_row{
+.my_row_dashboard{
     margin-left: 1%;
 }
 
-.users_jumbotron{
-    height: 82%;
+.users_jumbotron_dashboard{
+    height: 85.2%;
 }
+
+.my_row_articles_show{
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 30px;
+}
+.my_text_for_title_article{
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.my_photo_for_article{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.my_short_description{
+    font-size: 17px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.my_description{
+    font-size: 17px;
+    padding-bottom: 30px;
+}
+
