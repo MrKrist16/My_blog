@@ -20,67 +20,22 @@
 <body>
   <div class="main-programming">
     @include('layouts.navbar')
-    
     <div class="intro-programming">
       <div class="mask rgba-black-strong" style="height: 100%;">
         <div class="article-container article-columns">
-          <div class="article">
-            <img src="{{ asset('storage/uploads/1.jpg') }}">
-            <div class="text">
-              <h3>Title</h3>
-              <p>Description for article</p>
-              <a href="#"><button class="btn purple-gradient">Read More...</button></a>
+          @foreach ($articles as $article)
+            <div class="article">
+              <img src="{{asset("storage/$article->image")}}">
+              <div class="text">
+                <h3>{{$article->title}}</h3>
+                <p>{{$article->short_description}}</p>
+              <a href="{{route('programming.show', $article->id)}}"><button class="btn purple-gradient">Read More...</button></a>
+              <a href="#"><button class="btn purple-gradient">Views: {{ $article->views }}</button></a>
+              </div>
             </div>
-          </div>
-          <div class="article">
-            <img src="{{ asset('storage/uploads/2.jpg') }}">
-            <div class="text">
-              <h3>Title</h3>
-              <p>Description for article</p>
-              <a href="#"><button class="btn purple-gradient">Read More...</button></a>
-            </div>
-          </div>
-          <div class="article">
-            <img src="{{ asset('storage/uploads/3.jpg') }}">
-            <div class="text">
-              <h3>Title</h3>
-              <p>Description for article</p>
-              <a href="#"><button class="btn purple-gradient">Read More...</button></a>
-            </div>
-          </div>
-          <div class="article">
-            <img src="{{ asset('storage/uploads/4.jpg') }}">
-            <div class="text">
-              <h3>Title</h3>
-              <p>Description for article</p>
-              <a href="#"><button class="btn purple-gradient">Read More...</button></a>
-            </div>
-          </div>
-          <div class="article">
-            <img src="{{ asset('storage/uploads/5.jpg') }}">
-            <div class="text">
-              <h3>Title</h3>
-              <p>Description for article</p>
-              <a href="#"><button class="btn purple-gradient">Read More...</button></a>
-            </div>
-          </div>
-          <div class="article">
-            <img src="{{ asset('storage/uploads/6.jpg') }}">
-            <div class="text">
-              <h3>Title</h3>
-              <p>Description for article</p>
-              <a href="#"><button class="btn purple-gradient">Read More...</button></a>
-            </div>
-          </div>
-          <div class="article">
-            <img src="{{ asset('storage/uploads/7.jpg') }}">
-            <div class="text">
-              <h3>Title</h3>
-              <p>Description for article</p>
-              <a href="#"><button class="btn purple-gradient"sty>Read More...</button></a>
-            </div>
-          </div>
+          @endforeach
         </div>
+        <div class="pagination-div">{{ $articles->links("pagination::simple-bootstrap-4") }}</div>
       </div>
     </div>
 

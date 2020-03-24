@@ -10,7 +10,7 @@ class MusicController extends Controller
 {
     public function index()
     {
-        $music = Music::all();
+        $music = Music::paginate(15);
 
         return view('admin.music.index', compact('music'));
     }

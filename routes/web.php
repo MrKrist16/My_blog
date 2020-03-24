@@ -15,6 +15,8 @@ Route::get('/', ['as' => 'main', 'uses' => 'BlogController@mainpage']);
 Route::get('/about_me', 'BlogController@about_me');
 Route::get('/programming', 'BlogController@programming');
 Route::get('/self_development', 'BlogController@self_development');
+Route::get('/download/{image}', ['as' => 'image.download', 'uses' => 'BlogController@image_download']);
+Route::get('/programming/{article}', ['as' => 'programming.show', 'uses' => 'BlogController@show']);
 
 Route::get('/register', 'AuthenticationController@returnViewRegistration');
 Route::post('/register', 'AuthenticationController@storeAccount');
@@ -32,5 +34,7 @@ Route::group(['middleware' => 'auth'], function(){
         Route::delete('/admin/music/{music}', ['as' => 'music.destroy', 'uses' => 'MusicController@destroy']);
         Route::get('/admin/music/create', ['as' => 'music.store', 'uses' => 'MusicController@create']);
         Route::post('/admin/music/create', 'MusicController@store');
+        Route::get('/admin/users/', 'UsersController@index');
+        Route::delete('/admin/users/{user}', ['as' => 'user.destroy', 'uses' => 'UsersController@destroy']);
     });
 });

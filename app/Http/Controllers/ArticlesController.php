@@ -15,7 +15,7 @@ class ArticlesController extends Controller
      */
     public function index()
     {
-        $articles = Articles::all();
+        $articles = Articles::paginate(15);
 
         return view('admin.articles.index', compact('articles'));
     }
@@ -130,6 +130,6 @@ class ArticlesController extends Controller
         $article = Articles::find($id);
         Storage::disk('public')->delete($article->image);
         $article->delete();
-        return redirect()->to('/admin/articles')->with('success', 'Image deleted!');
+        return redirect()->to('/admin/articles')->with('success', 'Article deleted!');
     }
 }

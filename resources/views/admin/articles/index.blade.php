@@ -54,6 +54,7 @@
           @endforeach
       </tbody>
     </table>
+    <div style="display:flex;justify-content:center;">{{ $images->links() }}</div>
   <div>
   </div>
 @endsection

@@ -36,7 +36,7 @@
             <div class="col-sm">
                 <div class="jumbotron my_jumbotron_dashboard users_jumbotron_dashboard">
                     <div class="row">
-                        <a class="my_link_dashboard btn btn-info" href="#">Users</a>
+                        <a class="my_link_dashboard btn btn-info" href="users">Users</a>
                         <p class="my_text_dashboard">{{$users}}</p>
                     </div>
                 </div>

@@ -24,63 +24,18 @@
     <div class="intro-self-development">
       <div class="mask rgba-black-strong" style="height: auto; min-height: 100vh;">
         <div class="container-self-development columns-self-development">
-          <div class="hvrbox">
-            <a href="">
-              <img src="{{ asset('storage/uploads/1.jpg') }}" class="hvrbox-layer_bottom">
-              <div class="hvrbox-layer_top">
-                <div class="hvrbox-text">Download</div>
-              </div>
-            </a>
-          </div>
-          <div class="hvrbox">
-            <a href="">
-              <img src="{{ asset('storage/uploads/2.jpg') }}">
-              <div class="hvrbox-layer_top">
-                <div class="hvrbox-text">Download</div>
-              </div>
-            </a>
-          </div>
-          <div class="hvrbox">
-            <a href="">
-              <img src="{{ asset('storage/uploads/3.jpg') }}">
-              <div class="hvrbox-layer_top">
-                <div class="hvrbox-text">Download</div>
-              </div>
-            </a>
-          </div>
-          <div class="hvrbox">
-            <a href="">
-              <img src="{{ asset('storage/uploads/4.jpg') }}">
-              <div class="hvrbox-layer_top">
-                <div class="hvrbox-text">Download</div>
-              </div>
-            </a>
-          </div>
-          <div class="hvrbox">
-            <a href="">
-              <img src="{{ asset('storage/uploads/5.jpg') }}">
-              <div class="hvrbox-layer_top">
-                <div class="hvrbox-text">Download</div>
-              </div>
-            </a>
-          </div>
-          <div class="hvrbox">
-            <a href="">
-              <img src="{{ asset('storage/uploads/6.jpg') }}">
-              <div class="hvrbox-layer_top">
-                <div class="hvrbox-text">Download</div>
-              </div>
-            </a>
-          </div>
-          <div class="hvrbox">
-            <a href="">
-              <img src="{{ asset('storage/uploads/7.jpg') }}">
-              <div class="hvrbox-layer_top">
-                <div class="hvrbox-text">Download</div>
-              </div>
-            </a>
-          </div>
+          @foreach ($images as $image)
+            <div class="hvrbox">
+              <a href="{{ route('image.download', $image->id)}}">
+                <img src="{{ asset("storage/$image->url") }}" class="hvrbox-layer_bottom">
+                <div class="hvrbox-layer_top">
+                  <div class="hvrbox-text">Download</div>
+                </div>
+              </a>
+            </div>
+          @endforeach
         </div>
+        <div class="pagination-div">{{ $images->links("pagination::simple-bootstrap-4") }}</div>
       </div>
     </div>
 

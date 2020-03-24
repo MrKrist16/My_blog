@@ -17,6 +17,8 @@
           <tr>
             <td>ID</td>
             <td>PATH</td>
+            <td></td>
+            <td></td>
           </tr>
       </thead>
       <tbody>
@@ -38,6 +40,7 @@
           @endforeach
       </tbody>
     </table>
+    <div style="display:flex;justify-content:center;">{{ $images->links() }}</div>
   <div>
   </div>
 @endsection
